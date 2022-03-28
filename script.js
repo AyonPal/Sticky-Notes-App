@@ -4,10 +4,12 @@ window.onload = document.querySelector("#user_input").select();
 
 document.querySelector("#add_note").addEventListener("click", () => {
   document.querySelector("#pop_note").style.display = "block";
+  document.querySelector("#user_input").value = '';
 });
 
  document.querySelector("#container_notes").addEventListener("click", () => {
   document.querySelector("#pop_note").style.display = "block";
+  document.querySelector("#user_input").value = '';
 });
 
 document.querySelector("#hide").addEventListener("click", () => {
@@ -19,7 +21,6 @@ document.querySelector("#user_input").addEventListener('keydown', (event) => {
     const text = document.querySelector("#user_input");
     createStickyNote(text.value);
     document.querySelector("#pop_note").style.display = "none";
- /* CLEAR DIE NOTE DANACH */ 
   }
 });
 
