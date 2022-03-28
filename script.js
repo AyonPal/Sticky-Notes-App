@@ -3,11 +3,11 @@ var index = 0;
 window.onload = document.querySelector("#user_input").select();
 
 document.querySelector("#add_note").addEventListener("click", () => {
-  document.querySelector("#modal").style.display = "block";
+  document.querySelector("#pop_note").style.display = "block";
 });
 
 document.querySelector("#hide").addEventListener("click", () => {
-  document.querySelector("#modal").style.display = "none";
+  document.querySelector("#pop_note").style.display = "none";
 });
 
 document.querySelector("#user_input").addEventListener('keydown', (event) => {

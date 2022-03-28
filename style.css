@@ -5,28 +5,34 @@
   margin: 0;
 }
 
+.container{
+  width: 100%;
+  margin: auto;
+}
+
 body{
   position: relative;
   background-color:  white;
   font-family: 'Roboto Mono';
 }
 
+/* button design */
 button{
   box-shadow: 10px 6px 24px 0px rgba(0,0,0,0.75);
   padding: 8px;
   outline: none;
   cursor: pointer;
   border-radius: 5px;
-  background: whitesmoke;
-  border: 1px solid lightgray;
 }
 
+/*button design on hover */
 button:hover{
   color: white;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-#modal{
+/* pop-up note , always mid, dark background */
+#pop_note{
   display: none;
   position: fixed;
   z-index: 1;
@@ -35,14 +41,15 @@ button:hover{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#inner_modal{
+/* note to create */
+#inner_pop_note{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-
-#inner_modal textarea{
+/* note to create text */
+#inner_pop_note textarea{
   background: linear-gradient(180deg, rgba(255,209,38,1) 0%, rgba(255,209,38,1) 54%, rgba(180,149,32,1) 100%);
   width: 350px;
   height: 350px;
@@ -53,7 +60,8 @@ button:hover{
   box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.9);
 }
 
-#inner_modal i{
+/* the X-button on the pop_note note */
+#inner_pop_note i{
   font-size: 1.4rem;
   color: black;
   cursor: pointer;
@@ -61,15 +69,12 @@ button:hover{
   margin-left: -35px;
 }
 
-#inner_modal i:hover{
+/* hover over X-button */
+#inner_pop_note i:hover{
   color: red;
 }
 
-.container{
-  width: 1280px;
-  margin: auto;
-}
-
+/* header with title and buttons */
 #header{
   color: black;
   padding: 0 20px;
@@ -81,10 +86,7 @@ button:hover{
   align-items: center;
 }
 
-.fas{
-  color: #c2ff3d;
-}
-
+/* note area */
 #all_notes{
   display: flex;
   justify-content: center;
@@ -92,6 +94,7 @@ button:hover{
   padding-top: 10px;
 }
 
+/* note */
 .note{
   width:300px;
   height: 300px;
@@ -101,18 +104,14 @@ button:hover{
   box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
 }
 
+/* text*/
 .note h1{
   font-size: 1.5rem;
 }
 
+/* textarea */
 .details {
   margin-top: 25px;
   padding: 0 15px;
   font-size: 1.5rem;
-}
-
-.details i{
-  color: whitesmoke;
-  cursor: pointer;
-  text-shadow: 1px 1px #BBB;
 }

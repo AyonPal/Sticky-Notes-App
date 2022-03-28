@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Roboto Mono is the font choice for this project cause of it's clean style-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
@@ -10,15 +12,17 @@
 </head>
 <body>
 
-  <div id="modal">
-    <div id="inner_modal">
-      <textarea placeholder="Note..." id="user_input" maxlength="160"></textarea>
+  <!-- This is where a note will appear to create -->
+  <div id="pop_note">
+    <div id="inner_pop_note">
+      <textarea placeholder="Note..." id="user_input" maxlength="136"></textarea>
       <i class="btn-close" id="hide"></i>
     </div>
   </div>
   
   <main>
 
+    <!-- This is where the title and buttons are -->
     <header>
       <div class="container">
         <div id="header">
@@ -28,6 +32,7 @@
       </div>
     </header>
     
+    <!-- This is where the created notes will land -->
     <section>
       <div class="container">
         <div id="all_notes"></div>
