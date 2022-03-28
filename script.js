@@ -6,6 +6,10 @@ document.querySelector("#add_note").addEventListener("click", () => {
   document.querySelector("#pop_note").style.display = "block";
 });
 
+/* document.querySelector("#container_notes").addEventListener("click", () => {
+  document.querySelector("#pop_note").style.display = "block";
+} */
+
 document.querySelector("#hide").addEventListener("click", () => {
   document.querySelector("#pop_note").style.display = "none";
 });
@@ -18,9 +22,9 @@ document.querySelector("#user_input").addEventListener('keydown', (event) => {
 });
 
 createStickyNote = (text) => {
-  let note = document.createElement("div");
-  let details = document.createElement("div");
-  let noteText = document.createElement("h1");
+  var note = document.createElement("div");
+  var details = document.createElement("div");
+  var noteText = document.createElement("h1");
 
   note.className = "note";
   details.className = "details";
@@ -36,4 +40,9 @@ createStickyNote = (text) => {
   })
 
   document.querySelector("#all_notes").appendChild(note);
+
+  document.querySelector("#remove_note").addEventListener("click", () => {
+    note.remove();
+  });
+
 }

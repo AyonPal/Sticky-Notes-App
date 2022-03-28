@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <!-- Roboto Mono is the font choice for this project cause of it's clean style-->
+  <!-- Roboto Mono is the font choice for this project cause of it's clean style -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
@@ -27,14 +27,14 @@
       <div class="container">
         <div id="header">
           <h1>Sticky Notes</h1>
-          <button class="btn btn-success" id="add_note" onclick="typeNote()">Add note</button> <button class="btn btn-danger" onclick="removeNotes()">Delete all notes</button>
+          <button class="btn btn-success" id="add_note" onclick="typeNote()">Add note</button> <button class="btn btn-danger" id="remove_note" onclick="removeNotes()">Delete all notes</button>
         </div>
       </div>
     </header>
     
     <!-- This is where the created notes will land -->
     <section>
-      <div class="container">
+      <div class="container" id="container_notes">
         <div id="all_notes"></div>
       </div>
     </section>
