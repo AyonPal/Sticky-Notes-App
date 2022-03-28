@@ -24,7 +24,7 @@
 
     <!-- This is where the title and buttons are -->
     <header>
-      <div class="container" id="container_header">
+      <div class="container" id="">
         <div id="header">
           <h1>Sticky Notes</h1>
           <button class="btn btn-success" id="add_note" onclick="typeNote()">Add note</button> <button class="btn btn-danger" id="remove_note" onclick="removeNotes()">Delete all notes</button>
@@ -34,8 +34,10 @@
     
     <!-- This is where the created notes will land -->
     <section>
-      <div class="container" id="container_notes">
-        <div id="all_notes"></div>
+      <div class="container" >
+        <div id="all_notes">
+          <div id="container_notes"></div>
+        </div>
       </div>
     </section>
 

@@ -6,9 +6,9 @@ document.querySelector("#add_note").addEventListener("click", () => {
   document.querySelector("#pop_note").style.display = "block";
 });
 
-/* document.querySelector("#container_notes").addEventListener("click", () => {
+ document.querySelector("#container_notes").addEventListener("click", () => {
   document.querySelector("#pop_note").style.display = "block";
-} */
+});
 
 document.querySelector("#hide").addEventListener("click", () => {
   document.querySelector("#pop_note").style.display = "none";
@@ -18,8 +18,16 @@ document.querySelector("#user_input").addEventListener('keydown', (event) => {
   if(event.key === 'Enter'){
     const text = document.querySelector("#user_input");
     createStickyNote(text.value);
+    document.querySelector("#pop_note").style.display = "none";
+ /* CLEAR DIE NOTE DANACH */ 
   }
 });
+
+/* document.querySelector("#container_notes").addEventListener('mouseclick', e => {
+  x = e.offsetX;
+  y = e.offsetY;
+  createStickyNote();
+}); */
 
 createStickyNote = (text) => {
   var note = document.createElement("div");
