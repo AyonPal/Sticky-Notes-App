@@ -34,6 +34,7 @@ module.exports.start = () => {
       console.log('Database connection to database has been established successfully.');
     })
     .catch((err) => {
+      console.log(err)
       console.log('Database connection failed');
       process.exit(1);
     });
