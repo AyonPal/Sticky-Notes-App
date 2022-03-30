@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": ">=6.10.1 <7.0"
+    "node": ">=12.18 <13.0"
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
