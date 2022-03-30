@@ -9,7 +9,20 @@ var config    = require(__dirname + '/../config/config.js')[env];
 var db        = {};
 
 if (config.use_env_variable) {
-  var sequelize = new Sequelize(process.env[config.use_env_variable] + "?sslmode=require");
+  var sequelize = new Sequelize({
+    database: process.env.DBNAME,
+    username: process.env.DBUSER,
+    password: process.env.DBPASS,
+    host: process.env.DBHOST,
+    port: 5432,
+    dialect: "postgres",
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false 
+      }
+    },
+  });
 } else {
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
