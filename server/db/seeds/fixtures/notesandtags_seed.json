@@ -1,0 +1,27 @@
+[
+  {
+    "model": "StickyNote",
+    "data": {
+      "text": "leisure",
+      "positionX": "200",
+      "positionY": "200"
+    }
+  },
+  {
+    "model": "StickyNote",
+    "data": {
+      "text": "books",
+      "positionX": "400",
+      "positionY": "400"
+    }
+  },
+  {
+    "model": "StickyNote",
+    "data": {
+      "text": "programming",
+      "positionX": "800",
+      "positionY": "800"
+    }
+  }
+]
+  
