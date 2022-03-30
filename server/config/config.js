@@ -2,13 +2,6 @@
 // seeds, model creation
 
 module.exports = {
-  development: {
-    username: "postgres",
-    password: "postgres",
-    database: "stickynote",
-    host: "localhost",
-    dialect: "postgres",
-  },
   production: {
     use_env_variable: "DATABASE_URL",
     dialect: "postgres",
