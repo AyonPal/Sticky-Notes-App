@@ -3,14 +3,22 @@
 
 module.exports = {
   development: {
-    username: 'postgres',
-    password: 'postgres',
-    database: 'stickynote',
-    host: 'localhost',
-    dialect: 'postgres'
+    username: "postgres",
+    password: "postgres",
+    database: "stickynote",
+    host: "localhost",
+    dialect: "postgres",
   },
   production: {
-    use_env_variable: 'DATABASE_URL'
-  }
+    use_env_variable: "DATABASE_URL",
+    dialect: "postgres",
+    protocol: "postgres",
+    ssl: true,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
+  },
 };
-
